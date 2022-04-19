@@ -21,9 +21,20 @@ class AppHeader extends StatelessWidget {
             ],
           ),
         ),
-        TextButton(
-          child: const Text('Sample'),
+        OutlinedButton(
           onPressed: () {},
+          child: Image.asset(
+            'asset/images/notification.png',
+            color: const Color(0xffb9c1d9),
+          ),
+          style: OutlinedButton.styleFrom(
+            minimumSize: Size.zero,
+            padding: const EdgeInsets.all(8),
+            side: const BorderSide(
+              width: 1.0,
+              color: Color(0xffb9c1d9),
+            ),
+          ),
         )
       ],
     );
