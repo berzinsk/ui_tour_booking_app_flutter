@@ -16,8 +16,18 @@ class AppHeader extends StatelessWidget {
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: const [
-              Text('Welcome back'),
-              Text('Karlis Berzins'),
+              Text(
+                'Welcome back',
+                style: TextStyle(
+                  color: Color(0xff575b66),
+                ),
+              ),
+              Text(
+                'Karlis Berzins',
+                style: TextStyle(
+                  color: Colors.white,
+                ),
+              ),
             ],
           ),
         ),

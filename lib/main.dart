@@ -38,6 +38,7 @@ class MyHomePage extends StatelessWidget {
         title: Text(title),
       ),
       body: Container(
+        color: const Color(0xff1f1f29),
         padding: const EdgeInsets.only(left: 16.0, right: 16.0),
         child: Column(
           children: const [
