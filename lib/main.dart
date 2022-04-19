@@ -37,9 +37,9 @@ class MyHomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text(title),
       ),
-      body: Center(
+      body: Container(
+        padding: const EdgeInsets.only(left: 16.0, right: 16.0),
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
           children: const [
             AppHeader(),
           ],
