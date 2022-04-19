@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'components/app_header.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -13,8 +15,12 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        brightness: Brightness.light,
       ),
+      darkTheme: ThemeData(
+        brightness: Brightness.dark,
+      ),
+      // themeMode: ThemeMode.dark,
       home: const MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
@@ -34,11 +40,8 @@ class MyHomePage extends StatelessWidget {
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text(
-              'Hello world',
-              style: Theme.of(context).textTheme.headline4,
-            ),
+          children: const [
+            AppHeader(),
           ],
         ),
       ),
