@@ -34,16 +34,15 @@ class MyHomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text(title),
-      ),
-      body: Container(
-        color: const Color(0xff1f1f29),
-        padding: const EdgeInsets.only(left: 16.0, right: 16.0),
-        child: Column(
-          children: const [
-            AppHeader(),
-          ],
+      backgroundColor: const Color(0xff1f1f29),
+      body: SafeArea(
+        child: Container(
+          padding: const EdgeInsets.only(left: 16.0, right: 16.0),
+          child: Column(
+            children: const [
+              AppHeader(),
+            ],
+          ),
         ),
       ),
     );
