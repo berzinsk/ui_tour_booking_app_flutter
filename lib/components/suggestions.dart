@@ -54,8 +54,8 @@ class Suggestions extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      child: Column(children: [
+    return Column(
+      children: [
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
@@ -81,7 +81,7 @@ class Suggestions extends StatelessWidget {
             },
           ),
         )
-      ]),
+      ],
     );
   }
 }
