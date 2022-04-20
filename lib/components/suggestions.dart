@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'suggestion_item.dart';
+
 class Suggestion {
   Suggestion({
     required this.name,
@@ -70,17 +72,7 @@ class Suggestions extends StatelessWidget {
             itemBuilder: (context, index) {
               Suggestion item = _suggestionList[index];
 
-              return Container(
-                decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(15.0),
-                  image: DecorationImage(
-                    image: AssetImage('asset/images/${item.imageName}.jpeg'),
-                    fit: BoxFit.cover,
-                  ),
-                ),
-                width: 140.0,
-                height: 160.0,
-              );
+              return SuggestionItem(suggestion: item);
             },
             separatorBuilder: (context, index) {
               return const SizedBox(
