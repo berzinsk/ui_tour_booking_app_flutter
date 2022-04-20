@@ -19,48 +19,60 @@ class SuggestionItem extends StatelessWidget {
           fit: BoxFit.cover,
         ),
       ),
-      width: 140.0,
-      height: 160.0,
-      child: Column(
-        crossAxisAlignment: CrossAxisAlignment.start,
-        mainAxisAlignment: MainAxisAlignment.spaceBetween,
-        children: [
-          Row(
-            children: const [
-              Text('Ratin placeholder'),
+      child: Container(
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            begin: Alignment.topCenter,
+            end: Alignment.bottomCenter,
+            colors: [
+              const Color(0xff000000).withOpacity(0.0),
+              const Color(0xff000000).withOpacity(0.42)
             ],
           ),
-          Padding(
-            padding: const EdgeInsets.only(left: 12.0, bottom: 8.0),
-            child: Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  suggestion.name,
-                  style: const TextStyle(fontSize: 14.0),
-                ),
-                Row(
-                  children: [
-                    const Image(
-                      image: AssetImage('asset/images/location.png'),
-                      width: 12.0,
-                      height: 12.0,
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(left: 4.0),
-                      child: Text(
-                        suggestion.location,
-                        style: const TextStyle(
-                          fontSize: 10.0,
-                        ),
-                      ),
-                    ),
-                  ],
-                ),
+        ),
+        width: 140.0,
+        height: 160.0,
+        child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+          children: [
+            Row(
+              children: const [
+                Text('Ratin placeholder'),
               ],
             ),
-          )
-        ],
+            Padding(
+              padding: const EdgeInsets.only(left: 12.0, bottom: 8.0),
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    suggestion.name,
+                    style: const TextStyle(fontSize: 14.0),
+                  ),
+                  Row(
+                    children: [
+                      const Image(
+                        image: AssetImage('asset/images/location.png'),
+                        width: 12.0,
+                        height: 12.0,
+                      ),
+                      Padding(
+                        padding: const EdgeInsets.only(left: 4.0),
+                        child: Text(
+                          suggestion.location,
+                          style: const TextStyle(
+                            fontSize: 10.0,
+                          ),
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
+              ),
+            )
+          ],
+        ),
       ),
     );
   }
