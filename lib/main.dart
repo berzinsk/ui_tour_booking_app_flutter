@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'components/app_header.dart';
+import 'components/suggestions.dart';
 
 void main() {
   runApp(const MyApp());
@@ -37,10 +38,11 @@ class MyHomePage extends StatelessWidget {
       backgroundColor: const Color(0xff1f1f29),
       body: SafeArea(
         child: Container(
-          padding: const EdgeInsets.only(left: 16.0, right: 16.0),
+          padding: const EdgeInsets.symmetric(horizontal: 16.0),
           child: Column(
             children: const [
               AppHeader(),
+              Suggestions(),
             ],
           ),
         ),
