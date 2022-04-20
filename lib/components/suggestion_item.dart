@@ -21,6 +21,47 @@ class SuggestionItem extends StatelessWidget {
       ),
       width: 140.0,
       height: 160.0,
+      child: Column(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Row(
+            children: const [
+              Text('Ratin placeholder'),
+            ],
+          ),
+          Padding(
+            padding: const EdgeInsets.only(left: 12.0, bottom: 8.0),
+            child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
+              children: [
+                Text(
+                  suggestion.name,
+                  style: const TextStyle(fontSize: 14.0),
+                ),
+                Row(
+                  children: [
+                    const Image(
+                      image: AssetImage('asset/images/location.png'),
+                      width: 12.0,
+                      height: 12.0,
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(left: 4.0),
+                      child: Text(
+                        suggestion.location,
+                        style: const TextStyle(
+                          fontSize: 10.0,
+                        ),
+                      ),
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          )
+        ],
+      ),
     );
   }
 }
