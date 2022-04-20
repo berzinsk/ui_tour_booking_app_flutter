@@ -59,9 +59,34 @@ class Suggestions extends StatelessWidget {
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-            const Text('Suggestions for you'),
-            TextButton(onPressed: () {}, child: const Text('See all'))
+            const Text(
+              'Suggestions for you',
+              style: TextStyle(
+                fontSize: 18.0,
+              ),
+            ),
+            TextButton(
+                onPressed: () {},
+                child: Row(
+                  children: const [
+                    Text(
+                      'See all',
+                      style: TextStyle(
+                        color: Colors.white,
+                        fontSize: 12.0,
+                      ),
+                    ),
+                    Image(
+                      image: AssetImage(
+                        'asset/images/arrow-right.png',
+                      ),
+                    )
+                  ],
+                ))
           ],
+        ),
+        const SizedBox(
+          height: 8.0,
         ),
         SizedBox(
           width: MediaQuery.of(context).size.width,
