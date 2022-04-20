@@ -68,9 +68,18 @@ class Suggestions extends StatelessWidget {
             scrollDirection: Axis.horizontal,
             itemCount: _suggestionList.length,
             itemBuilder: (context, index) {
+              Suggestion item = _suggestionList[index];
+
               return Container(
-                width: 160.0,
-                color: Colors.red,
+                decoration: BoxDecoration(
+                  borderRadius: BorderRadius.circular(15.0),
+                  image: DecorationImage(
+                    image: AssetImage('asset/images/${item.imageName}.jpeg'),
+                    fit: BoxFit.cover,
+                  ),
+                ),
+                width: 140.0,
+                height: 160.0,
               );
             },
             separatorBuilder: (context, index) {
