@@ -32,12 +32,15 @@ class AppHeader extends StatelessWidget {
           ),
         ),
         OutlinedButton(
-          onPressed: () {},
+          onPressed: () {
+            print('Notifications pressed');
+          },
           child: Image.asset(
             'asset/images/notification.png',
             color: const Color(0xffb9c1d9),
           ),
           style: OutlinedButton.styleFrom(
+            splashFactory: NoSplash.splashFactory,
             minimumSize: Size.zero,
             padding: const EdgeInsets.all(8),
             side: const BorderSide(
