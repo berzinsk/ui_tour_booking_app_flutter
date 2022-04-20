@@ -66,23 +66,29 @@ class Suggestions extends StatelessWidget {
               ),
             ),
             TextButton(
-                onPressed: () {},
-                child: Row(
-                  children: const [
-                    Text(
-                      'See all',
-                      style: TextStyle(
-                        color: Colors.white,
-                        fontSize: 12.0,
-                      ),
+              onPressed: () {
+                print('See all button pressed');
+              },
+              child: Row(
+                children: const [
+                  Text(
+                    'See all',
+                    style: TextStyle(
+                      color: Colors.white,
+                      fontSize: 12.0,
                     ),
-                    Image(
-                      image: AssetImage(
-                        'asset/images/arrow-right.png',
-                      ),
-                    )
-                  ],
-                ))
+                  ),
+                  Image(
+                    image: AssetImage(
+                      'asset/images/arrow-right.png',
+                    ),
+                  )
+                ],
+              ),
+              style: TextButton.styleFrom(
+                splashFactory: NoSplash.splashFactory,
+              ),
+            ),
           ],
         ),
         const SizedBox(
