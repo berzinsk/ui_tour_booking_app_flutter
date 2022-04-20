@@ -37,8 +37,30 @@ class SuggestionItem extends StatelessWidget {
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
             Row(
-              children: const [
-                Text('Ratin placeholder'),
+              mainAxisAlignment: MainAxisAlignment.end,
+              children: [
+                Padding(
+                  padding: const EdgeInsets.only(top: 8.0, right: 8.0),
+                  child: Container(
+                    color: Colors.black.withOpacity(0.4),
+                    child: Padding(
+                      padding: const EdgeInsets.all(4.0),
+                      child: Row(
+                        children: [
+                          Text(
+                            '${suggestion.rating}',
+                            style: const TextStyle(fontSize: 10.0),
+                          ),
+                          const Image(
+                            image: AssetImage('asset/images/star.png'),
+                            width: 12.0,
+                            height: 12.0,
+                          )
+                        ],
+                      ),
+                    ),
+                  ),
+                ),
               ],
             ),
             Padding(
