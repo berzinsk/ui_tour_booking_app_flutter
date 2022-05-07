@@ -4,14 +4,16 @@ class Rating extends StatelessWidget {
   const Rating({
     Key? key,
     required this.rating,
+    this.backgroundColor = Colors.black,
   }) : super(key: key);
 
   final double rating;
+  final Color backgroundColor;
 
   @override
   Widget build(BuildContext context) {
     return Container(
-      color: Colors.black.withOpacity(0.4),
+      color: backgroundColor,
       child: Padding(
         padding: const EdgeInsets.all(4.0),
         child: Row(

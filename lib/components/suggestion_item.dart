@@ -43,7 +43,10 @@ class SuggestionItem extends StatelessWidget {
               children: [
                 Padding(
                   padding: const EdgeInsets.only(top: 8.0, right: 8.0),
-                  child: Rating(rating: suggestion.rating),
+                  child: Rating(
+                    rating: suggestion.rating,
+                    backgroundColor: Colors.black.withOpacity(0.4),
+                  ),
                 ),
               ],
             ),

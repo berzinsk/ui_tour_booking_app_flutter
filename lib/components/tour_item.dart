@@ -50,7 +50,10 @@ class TourItem extends StatelessWidget {
                             color: Colors.white,
                           ),
                         ),
-                        Rating(rating: tour.rating),
+                        Rating(
+                          rating: tour.rating,
+                          backgroundColor: const Color(0xff1f1f29),
+                        ),
                       ],
                     ),
                     Row(
