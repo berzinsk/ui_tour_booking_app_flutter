@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 
 import 'components/app_header.dart';
 import 'components/suggestions.dart';
+import 'components/tours.dart';
 
 void main() {
   runApp(const MyApp());
@@ -40,9 +41,11 @@ class MyHomePage extends StatelessWidget {
         child: Container(
           padding: const EdgeInsets.symmetric(horizontal: 16.0),
           child: Column(
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: const [
               AppHeader(),
               Suggestions(),
+              Tours(),
             ],
           ),
         ),
