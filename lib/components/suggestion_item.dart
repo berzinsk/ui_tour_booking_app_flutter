@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+
 import 'package:tour_booking_app/components/suggestions.dart';
+import './rating.dart';
 
 class SuggestionItem extends StatelessWidget {
   const SuggestionItem({
@@ -41,25 +43,7 @@ class SuggestionItem extends StatelessWidget {
               children: [
                 Padding(
                   padding: const EdgeInsets.only(top: 8.0, right: 8.0),
-                  child: Container(
-                    color: Colors.black.withOpacity(0.4),
-                    child: Padding(
-                      padding: const EdgeInsets.all(4.0),
-                      child: Row(
-                        children: [
-                          Text(
-                            '${suggestion.rating}',
-                            style: const TextStyle(fontSize: 10.0),
-                          ),
-                          const Image(
-                            image: AssetImage('asset/images/star.png'),
-                            width: 12.0,
-                            height: 12.0,
-                          )
-                        ],
-                      ),
-                    ),
-                  ),
+                  child: Rating(rating: suggestion.rating),
                 ),
               ],
             ),
