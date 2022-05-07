@@ -1,23 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'tour_item.dart';
-
-class Tour {
-  Tour({
-    required this.name,
-    required this.country,
-    required this.rating,
-    required this.startDate,
-    required this.endDate,
-    required this.price,
-  });
-  String name;
-  String country;
-  double rating;
-  DateTime startDate;
-  DateTime endDate;
-  double price;
-}
+import '../model/tour.dart';
 
 final _tourList = [
   Tour(

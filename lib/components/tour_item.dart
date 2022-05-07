@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'tours.dart';
+import '../model/tour.dart';
 
 class TourItem extends StatelessWidget {
   const TourItem({
