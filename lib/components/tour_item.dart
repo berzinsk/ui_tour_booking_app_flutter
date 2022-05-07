@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:intl/intl.dart';
 
 import '../model/tour.dart';
 import './rating.dart';
@@ -53,19 +54,57 @@ class TourItem extends StatelessWidget {
                       ],
                     ),
                     Row(
-                      children: const [
-                        Padding(
+                      children: [
+                        const Padding(
                           padding: EdgeInsets.only(right: 4.0),
                           child: Image(
                               image: AssetImage('asset/images/calendar.png')),
                         ),
-                        Text('Date goes here'),
+                        Text(
+                          '${DateFormat('dd').format(tour.startDate)} - '
+                          '${DateFormat('dd MMM yyyy').format(tour.endDate)}',
+                          style: const TextStyle(fontSize: 13.0),
+                        ),
                       ],
                     ),
                     Row(
                       children: [
-                        Text('${tour.price}'),
-                        Text(tour.country),
+                        Row(
+                          children: [
+                            const Padding(
+                              padding: EdgeInsets.only(right: 4.0),
+                              child: Image(
+                                  image: AssetImage('asset/images/dollar.png')),
+                            ),
+                            Text(
+                              '${tour.price}',
+                              style: const TextStyle(fontSize: 13.0),
+                            ),
+                            const Text(
+                              ' / Day',
+                              style: TextStyle(
+                                color: Color(0xff575b66),
+                                fontSize: 10.0,
+                              ),
+                            ),
+                          ],
+                        ),
+                        const SizedBox(width: 26.0),
+                        Row(
+                          children: [
+                            const Padding(
+                              padding: EdgeInsets.only(right: 4.0),
+                              child: Image(
+                                color: Color(0xff575b66),
+                                image: AssetImage('asset/images/location.png'),
+                              ),
+                            ),
+                            Text(
+                              tour.country,
+                              style: const TextStyle(fontSize: 13.0),
+                            ),
+                          ],
+                        ),
                       ],
                     )
                   ],
