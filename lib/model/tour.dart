@@ -6,6 +6,7 @@ class Tour {
     required this.startDate,
     required this.endDate,
     required this.price,
+    required this.imageName,
   });
   String name;
   String country;
@@ -13,4 +14,5 @@ class Tour {
   DateTime startDate;
   DateTime endDate;
   double price;
+  String imageName;
 }

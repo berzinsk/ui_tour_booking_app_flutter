@@ -11,6 +11,7 @@ final _tourList = [
     startDate: DateTime.now(),
     endDate: DateTime.now(),
     price: 450,
+    imageName: 'image3',
   ),
   Tour(
     name: 'Rocky mountain',
@@ -19,6 +20,7 @@ final _tourList = [
     startDate: DateTime.now(),
     endDate: DateTime.now(),
     price: 200,
+    imageName: 'image4',
   ),
   Tour(
     name: 'Liepājas ielas',
@@ -27,6 +29,7 @@ final _tourList = [
     startDate: DateTime.now(),
     endDate: DateTime.now(),
     price: 100,
+    imageName: 'image5',
   ),
   Tour(
     name: 'Ventspils pludmales',
@@ -35,6 +38,7 @@ final _tourList = [
     startDate: DateTime.now(),
     endDate: DateTime.now(),
     price: 100,
+    imageName: 'image6',
   ),
 ];
 
@@ -62,14 +66,7 @@ class Tours extends StatelessWidget {
             height: 400,
             child: ListView.separated(
               itemBuilder: (context, index) {
-                Tour tour = Tour(
-                  country: 'Egypt',
-                  name: '',
-                  endDate: DateTime.now(),
-                  price: 450,
-                  rating: 4.9,
-                  startDate: DateTime.now(),
-                );
+                Tour tour = _tourList[index];
 
                 return TourItem(tour: tour);
               },
