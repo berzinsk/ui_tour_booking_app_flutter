@@ -9,11 +9,14 @@ class TravelDetails extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: const EdgeInsets.symmetric(horizontal: 16.0),
+      padding: const EdgeInsets.symmetric(horizontal: 12.0),
       child: Column(
         children: const [
           TravelImages(),
-          TravelSummary(),
+          Padding(
+            padding: EdgeInsets.symmetric(horizontal: 4.0),
+            child: TravelSummary(),
+          ),
         ],
       ),
     );
