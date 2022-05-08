@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 import 'tour_item.dart';
-import '../model/tour.dart';
+import '../../model/tour.dart';
 
 final _tourList = [
   Tour(

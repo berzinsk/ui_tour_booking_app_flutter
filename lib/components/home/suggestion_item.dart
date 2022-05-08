@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import 'package:tour_booking_app/components/suggestions.dart';
-import './rating.dart';
+import 'package:tour_booking_app/components/home/suggestions.dart';
+import 'rating.dart';
 
 class SuggestionItem extends StatelessWidget {
   const SuggestionItem({

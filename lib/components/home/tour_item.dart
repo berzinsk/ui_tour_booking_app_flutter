@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 
-import '../model/tour.dart';
-import './rating.dart';
+import '../../model/tour.dart';
+import 'rating.dart';
 
 class TourItem extends StatelessWidget {
   const TourItem({

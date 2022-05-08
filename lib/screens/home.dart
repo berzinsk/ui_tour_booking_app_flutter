@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 
-import '../components/app_header.dart';
-import '../components/suggestions.dart';
-import '../components/tours.dart';
+import '../components/home/app_header.dart';
+import '../components/home/suggestions.dart';
+import '../components/home/tours.dart';
 
 class MyHomePage extends StatelessWidget {
   const MyHomePage({Key? key, required this.title}) : super(key: key);
