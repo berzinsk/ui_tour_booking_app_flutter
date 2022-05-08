@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'screens/trip_details.dart';
+import 'screens/travel_details.dart';
 
 void main() {
   runApp(const MyApp());
@@ -24,7 +24,7 @@ class MyApp extends StatelessWidget {
       home: const Scaffold(
         backgroundColor: Color(0xff1f1f29),
         body: SafeArea(
-          child: TripDetails(),
+          child: TravelDetails(),
         ),
       ),
     );
