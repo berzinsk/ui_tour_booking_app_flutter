@@ -5,12 +5,16 @@ class TravelImages extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Expanded(
-      child: Container(
-        height: 409,
-        color: Colors.black,
-        child: const Text('TravelImages container placeholder'),
-      ),
+    return Row(
+      children: [
+        Expanded(
+          child: Container(
+            height: 409,
+            color: Colors.black,
+            child: const Text('TravelImages container placeholder'),
+          ),
+        )
+      ],
     );
   }
 }
