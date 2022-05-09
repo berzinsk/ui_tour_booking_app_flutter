@@ -9,7 +9,6 @@ class TravelSummaryHeader extends StatelessWidget {
   Widget build(BuildContext context) {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
-      crossAxisAlignment: CrossAxisAlignment.center,
       children: [
         const Text(
           'Travel summary',
@@ -20,7 +19,12 @@ class TravelSummaryHeader extends StatelessWidget {
         ),
         TextButton(
           onPressed: () {},
+          style: TextButton.styleFrom(
+            padding: EdgeInsets.zero,
+            splashFactory: NoSplash.splashFactory,
+          ),
           child: Row(
+            crossAxisAlignment: CrossAxisAlignment.center,
             children: const [
               Text(
                 'See more',
