@@ -19,7 +19,10 @@ class TravelSummaryDetailsItem extends StatelessWidget {
         Container(
           width: 40.0,
           height: 40.0,
-          color: const Color(0xff131316),
+          decoration: BoxDecoration(
+            borderRadius: BorderRadius.circular(6.0),
+            color: const Color(0xff131316),
+          ),
           child: Image(
             image: AssetImage('asset/images/$iconName.png'),
             width: 24.0,
