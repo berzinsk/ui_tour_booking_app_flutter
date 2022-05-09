@@ -13,9 +13,11 @@ class TravelDetails extends StatelessWidget {
       child: Column(
         children: const [
           TravelImages(),
-          Padding(
-            padding: EdgeInsets.symmetric(horizontal: 4.0),
-            child: TravelSummary(),
+          Expanded(
+            child: Padding(
+              padding: EdgeInsets.symmetric(horizontal: 4.0),
+              child: TravelSummary(),
+            ),
           ),
         ],
       ),
