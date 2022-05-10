@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 
 import '../components/travel_details/travel_header_image.dart';
+import '../components/travel_details/travel_images.dart';
 import '../components/travel_details/travel_summary.dart';
 
 class TravelDetails extends StatelessWidget {
@@ -13,6 +14,7 @@ class TravelDetails extends StatelessWidget {
       child: Column(
         children: const [
           TravelHeaderImage(),
+          TravelImages(),
           Expanded(
             child: Padding(
               padding: EdgeInsets.symmetric(horizontal: 4.0),
